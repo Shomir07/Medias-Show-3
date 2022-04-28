@@ -1,0 +1,78 @@
+/*Valores Principales*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primer-color: #c02122;
+    --segundo-color: #44b09e;
+    --tercer-color: #ffcf3f;
+    --color-base: #e7e9e9;
+    --color-texto: #ffffff;
+    --sombras-letras: #fe4c4a;
+    --sombreado-nav: #6c6f74;
+    --sombreado-nav2: #070000;
+    --texto-oscuro: #b8b3b3;
+}
+
+
+/*Google fonts*/
+
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=IBM+Plex+Sans+Devanagari:wght@500&display=swap');
+
+/*cuerpo*/
+
+body {
+    font-family: 'Bree Serif', serif;
+    font-family: 'IBM Plex Sans Devanagari', sans-serif;
+    background-color: #fff5e9;
+    color: var(--text-color);
+}
+
+.pag-inconclusa {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    padding: 50px;
+}
+
+.pag-inconclusa1 {
+    text-align: center;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-family: 'Mystery Quest', cursive;
+    font-weight: 300;
+    color: rgb(241, 181, 90);
+}
+
+.pag-inconclusa2 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-bottom: 10px;
+    z-index: 1;
+}
+
+.pag-inconclusa2 svg {
+    width: 80px;
+    margin: auto;
+    fill: rgb(86, 221, 255);
+}
+
+@media (max-width: 800px) {
+    .pag-inconclusa2 {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+    }
+}

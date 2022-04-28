@@ -1,0 +1,84 @@
+/**Boton Modo Nocturno*/
+
+:root {
+    --primer-color: #c02122;
+    --segundo-color: #44b09e;
+    --tercer-color: #ffcf3f;
+    --color-base: #e7e9e9;
+    --color-texto: #ffffff;
+    --sombras-letras: #fe4c4a;
+    --sombreado-nav: #6c6f74;
+    --sombreado-nav2: #070000;
+    --texto-oscuro: #b8b3b3;
+}
+
+.desk-mode {
+    margin-right: 10px;
+}
+
+.switchDark {
+    background: #1d1c24;
+    border-radius: 1rem;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    outline: none;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.switchDark span {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    background: none;
+    color: #fff;
+}
+
+.switchDark::after {
+    display: block;
+    background: #fff;
+    width: 1.8rem;
+    height: 1.8rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: unset;
+    border-radius: 50%;
+    transition: all .5s ease;
+    box-shadow: 0 0 1.5px 1, 5px rgba(0, 0, 0, .5);
+    content: "";
+}
+
+.switchDark.active {
+    background: #fdd384;
+}
+
+.switchDark.active::after {
+    left: unset;
+    right: 0;
+}
+
+body.dark {
+    background: #e8dad3;
+    color: #fff;
+}
+
+@media (max-width: 950px) {
+    .desk-mode {
+        margin-bottom: 20px;
+    }
+}
+
+
+/**.card {
+    background: #fff;
+}*/
+
+
+/** width: 100px;
+    height: 100vh;
+    background: linear-gradient(130deg, #509fc9, #e83b59);
+    opacity: 0.7;*/
